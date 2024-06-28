@@ -1,6 +1,7 @@
 package com.poo.classes;
 
-public class editora {
+public class Editora {
     int editora_id;
     String nome;
 }
+
