@@ -21,5 +21,6 @@ public class Devolucao {
     public void setDevolucao_id(int devolucao_id) {
         this.devolucao_id = devolucao_id;
     }
+    // escrevi o commit errado
 }
 
