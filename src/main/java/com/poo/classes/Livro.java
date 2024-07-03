@@ -7,6 +7,16 @@ public class Livro {
     private int ano;
     private int autor_id;
     private int editora_id;
+    private static int contador = 0;
+
+    public Livro(int edicao, String titulo, int ano, int autor_id, int editora_id) {
+        this.livro_id = contador++;
+        this.edicao = edicao;
+        this.titulo = titulo;
+        this.ano = ano;
+        this.autor_id = autor_id;
+        this.editora_id = editora_id;
+    }
 
     public int getLivro_id() {
         return livro_id;

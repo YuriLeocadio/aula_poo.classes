@@ -6,6 +6,14 @@ public class Pessoa {
     private String cpf;
     private String nome;
     private int endereco_id;
+    private static int contador = 0;
+
+    public Pessoa(String nome, String cpf, int endereco_id) {
+        this.pessoa_id = contador++;
+        this.nome = nome;
+        this.cpf = cpf;
+        this.endereco_id = endereco_id;
+    }
 
     public int getPessoa_id() {
         return pessoa_id;

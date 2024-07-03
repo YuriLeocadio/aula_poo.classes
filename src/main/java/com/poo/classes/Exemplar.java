@@ -3,6 +3,12 @@ package com.poo.classes;
 public class Exemplar {
     private int exemplar_id;
     private int livro_id;
+    private static int contador = 0;
+
+    public Exemplar(int livro_id) {
+        this.exemplar_id = contador++;
+        this.livro_id = livro_id;
+    }
 
     public int getExemplar_id() {
         return exemplar_id;

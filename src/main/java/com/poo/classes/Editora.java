@@ -3,6 +3,12 @@ package com.poo.classes;
 public class Editora {
     private int editora_id;
     private String nome;
+    private static int contador = 0;
+
+    public Editora(String nome) {
+        this.editora_id = contador++;
+        this.nome = nome;
+    }
 
     public int getEditora_id() {
         return editora_id;

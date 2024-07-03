@@ -7,6 +7,14 @@ public class Emprestimo {
     private LocalDate data_emprestimo = LocalDate.now();
     private LocalDate data_prev_dev;
     private int pessoa_id;
+    private static int contador = 0;
+
+    public Emprestimo(LocalDate data_emprestimo, LocalDate data_prev_dev, int pessoa_id) {
+        this.emprestimo_id = contador++;
+        this.data_emprestimo = data_emprestimo;
+        this.data_prev_dev = data_prev_dev;
+        this.pessoa_id = pessoa_id;
+    }
 
     public int getEmprestimo_id() {
         return emprestimo_id;

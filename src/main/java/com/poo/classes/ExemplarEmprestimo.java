@@ -5,6 +5,14 @@ public class ExemplarEmprestimo {
     private int exemplar_id;
     private int emprestimo_id;
     private int devolucao_id;
+    private static int contador = 0;
+
+    public ExemplarEmprestimo(int exemplar_id, int emprestimo_id, int devolucao_id) {
+        this.exemplar_emprestimo_id = contador++;
+        this.exemplar_id = exemplar_id;
+        this.emprestimo_id = emprestimo_id;
+        this.devolucao_id = devolucao_id;
+    }
 
     public int getExemplar_emprestimo_id() {
         return exemplar_emprestimo_id;

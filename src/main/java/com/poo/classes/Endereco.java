@@ -7,6 +7,21 @@ public class Endereco {
     private String logradouro;
     private String complemento;
     private int endereco_id;
+    private String cep;
+    private static int contador = 0;
+
+    public Endereco(String cep) {
+        this.endereco_id = contador++;
+        this.cep = cep;
+    }
+
+    public String getCep(){
+        return cep;
+    }
+
+    public void setCep(String cep){
+        this.cep = cep;
+    }
 
     public String getuf() {
         return uf;
