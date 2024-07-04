@@ -38,4 +38,7 @@ public abstract class Funcionario extends Pessoa {
 
     // Método abstrato para imprimir contracheque com FGTS e INSS
     public abstract void imprimeContraCheque();
+
+    // Método abstrato para autenticação
+    public abstract boolean autentica(String login, String senha);
 }
